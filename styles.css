@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flexcontainer {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.orwelltext {
+    color: rgb(181, 219, 13);
+    background-color: rgba(0,0,0, 0.5);
+    padding: 15px;
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+}
+
+.buttondiv {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color:rgba(0,0,0, 0.5);
+    padding: 35px;
+}
