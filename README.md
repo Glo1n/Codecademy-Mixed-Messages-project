@@ -1,1 +1,1 @@
-# codecademy-mixed-messages-project
+# Codecademy mixed messages project
