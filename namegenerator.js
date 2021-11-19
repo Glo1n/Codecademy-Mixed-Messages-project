@@ -7,9 +7,9 @@ let arrNames = [
     "Vincent van Gogh", "Rembrandt van Rijn", "Pablo Picasso", "Mark Twain", "Edgar Allan Poe",
     "Jane Austen", "George Orwell", "Marilyn Monroe", "Nelson Mandela", "John F. Kennedy",
     "Queen Elizabeth II", "Winston Churchill", "Donald Trump", "Bill Gates", "Muhammed Ali",
-    "Mahatma Gandhi", "Elvis Presley", "Rosa Parks", "Oprah Winfrey", "Desmond Tutu", "Dalai Lama",
+    "Mahatma Gandhi", "Elvis Presley", "Rosa Parks", "Oprah Winfrey", "Desmond Tutu", 
     "Neil Armstrong", "Walt Disney", "Barack Obama", "Malcolm X", "J.K. Rowling", "Angelina Jolie",
-    "John Lennon", "Vladimir Lenin", "Fidel Castro", "Amelia Earhart", "Mary Magdalene", "Micheal Jackson",
+    "John Lennon", "Vladimir Lenin", "Fidel Castro", "Amelia Earhart", "Mary Magdalene", "Michael Jackson",
     "Madonna", "Mata Hari", "Cleopatra", "Grace Kelly", "Lionel Messi", "Sigmund Freud", "Kim Kardashian",
     "J.R.R. Tolkien", "Margaret Thatcher", "Anne Frank", "Queen Marie Antoinette", "Christiano Ronaldo",
     "Simon Bolivar", "Florence Nightingale", "Marie Curie", "Shakira", "Lance Armstrong", "Brad Pitt",
@@ -17,6 +17,7 @@ let arrNames = [
 ]
 
 const nameGenerator = () => {
+
     const name1 = arrNames[Math.floor(Math.random() * arrNames.length)];
 
     const arrNames2 = arrNames.filter(a => a !== name1);
@@ -27,6 +28,9 @@ const nameGenerator = () => {
 
     const name3 = arrNames3[Math.floor(Math.random() * arrNames3.length)];
 
-    return `You have to kiss ${name1}, marry ${name2} and kill ${name3}. Have fun!`
+    let kmk = `You have to kiss ${name1}, marry ${name2} and kill ${name3}. Have fun!`;
+
+    document.getElementById("kissmarrykill").innerHTML = kmk;
+
     
 }

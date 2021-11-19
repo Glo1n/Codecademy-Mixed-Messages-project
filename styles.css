@@ -21,8 +21,8 @@ body {
 }
 
 .orwelltext {
-    color: rgb(209, 255, 2);
-    background-color: rgba(0,0,0, 0.5);
+    color: rgb(209, 205, 205);
+    background-color: rgba(0,0,0, 0.8);
     padding: 15px;
     text-align: center;
     font-size: x-large;
@@ -34,6 +34,17 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color:rgba(0,0,0, 0.5);
+    background-color:rgba(0,0,0, 0.8);
     padding: 35px;
+}
+
+#kissmarrykill {
+    color:rgb(180, 231, 39);
+}
+
+.function {
+    background-color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
 }
