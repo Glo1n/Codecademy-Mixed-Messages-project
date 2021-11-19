@@ -1,4 +1,4 @@
-const names = [
+let arrNames = [
     "Jezus Christ", "Napoleon Bonaparte", "William Shakespeare", "Abraham Lincoln",
     "George Washington", "Adolf Hitler", "King Henry VIII", "Charles Darwin", "Queen Elizabeth I",
     "Karl Marx", "Julius Caesar", "Queen Victoria", "Martin Luther King", "Joseph Stalin",
@@ -15,3 +15,18 @@ const names = [
     "Simon Bolivar", "Florence Nightingale", "Marie Curie", "Shakira", "Lance Armstrong", "Brad Pitt",
     "Sacha Baron Cohen", "Ted Bundy", "Jack the Ripper", "Jeffrey Dahmer", "Charles Manson"
 ]
+
+const nameGenerator = () => {
+    const name1 = arrNames[Math.floor(Math.random() * arrNames.length)];
+
+    const arrNames2 = arrNames.filter(a => a !== name1);
+
+    const name2 = arrNames2[Math.floor(Math.random() * arrNames2.length)];
+
+    const arrNames3 = arrNames2.filter(b => b !== name2);
+
+    const name3 = arrNames3[Math.floor(Math.random() * arrNames3.length)];
+
+    return `You have to kiss ${name1}, marry ${name2} and kill ${name3}. Have fun!`
+    
+}
