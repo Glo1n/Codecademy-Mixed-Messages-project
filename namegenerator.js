@@ -32,6 +32,7 @@ const nameGenerator = () => {
     let marry = `You have to marry ${name2}.`;
     let kill = `And you have to kill ${name3}.`;
     let bye = `Have fun!`;
+
     document.getElementById("kiss").innerHTML = kiss;
     document.getElementById("marry").innerHTML = marry;
     document.getElementById("kill").innerHTML = kill;
@@ -39,6 +40,4 @@ const nameGenerator = () => {
     document.getElementById("1")
     document.getElementById("2")
     document.getElementById("3")
-
-    
 }
