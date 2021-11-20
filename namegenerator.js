@@ -28,9 +28,17 @@ const nameGenerator = () => {
 
     const name3 = arrNames3[Math.floor(Math.random() * arrNames3.length)];
 
-    let kmk = `You have to kiss ${name1}, marry ${name2} and kill ${name3}. Have fun!`;
-
-    document.getElementById("kissmarrykill").innerHTML = kmk;
+    let kiss = `You have to kiss ${name1}.`;
+    let marry = `You have to marry ${name2}.`;
+    let kill = `And you have to kill ${name3}.`;
+    let bye = `Have fun!`;
+    document.getElementById("kiss").innerHTML = kiss;
+    document.getElementById("marry").innerHTML = marry;
+    document.getElementById("kill").innerHTML = kill;
+    document.getElementById("bye").innerHTML = bye;
+    document.getElementById("1")
+    document.getElementById("2")
+    document.getElementById("3")
 
     
 }
